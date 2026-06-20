@@ -1,0 +1,22 @@
+- name: Setup dbt profile
+  env:
+    SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+    SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+    SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+    SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+  run: |
+    mkdir -p ~/.dbt
+    cat > ~/.dbt/profiles.yml <<'EOL'
+    banking_dbt:
+      target: dev
+      outputs:
+        dev:
+          type: snowflake
+          account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+          user: "{{ env_var('SNOWFLAKE_USER') }}"
+          password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+          role: ACCOUNTADMIN
+          database: BANKING
+          warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+          schema: ANALYTICS
+    EOL
