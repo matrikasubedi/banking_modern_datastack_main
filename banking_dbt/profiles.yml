@@ -1,4 +1,4 @@
-- name: Setup dbt profile
+name: banking_dbt
   env:
     SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
     SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
