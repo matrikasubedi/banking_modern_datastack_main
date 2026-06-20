@@ -1,0 +1,76 @@
+[2026-06-20T19:18:00.222+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-20T19:18:00.242+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: SCD2_snapshots.dbt_run_marts manual__2026-06-20T19:16:45.894980+00:00 [queued]>
+[2026-06-20T19:18:00.247+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: SCD2_snapshots.dbt_run_marts manual__2026-06-20T19:16:45.894980+00:00 [queued]>
+[2026-06-20T19:18:00.249+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-20T19:18:00.257+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run_marts> on 2026-06-20 19:16:45.894980+00:00
+[2026-06-20T19:18:00.262+0000] {standard_task_runner.py:64} INFO - Started process 7427 to run task
+[2026-06-20T19:18:00.263+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'SCD2_snapshots', 'dbt_run_marts', 'manual__2026-06-20T19:16:45.894980+00:00', '--job-id', '149', '--raw', '--subdir', 'DAGS_FOLDER/scd_snapshots.py', '--cfg-path', '/tmp/tmpyxzcntke']
+[2026-06-20T19:18:00.265+0000] {standard_task_runner.py:91} INFO - Job 149: Subtask dbt_run_marts
+[2026-06-20T19:18:00.301+0000] {task_command.py:426} INFO - Running <TaskInstance: SCD2_snapshots.dbt_run_marts manual__2026-06-20T19:16:45.894980+00:00 [running]> on host c91257ad26f0
+[2026-06-20T19:18:00.360+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='SCD2_snapshots' AIRFLOW_CTX_TASK_ID='dbt_run_marts' AIRFLOW_CTX_EXECUTION_DATE='2026-06-20T19:16:45.894980+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-20T19:16:45.894980+00:00'
+[2026-06-20T19:18:00.361+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-20T19:18:00.371+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-06-20T19:18:00.372+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/banking_dbt && dbt run --select marts --profiles-dir /home/***/.dbt']
+[2026-06-20T19:18:00.378+0000] {subprocess.py:86} INFO - Output:
+[2026-06-20T19:18:01.892+0000] {subprocess.py:93} INFO - [0m19:18:01  Running with dbt=1.11.11
+[2026-06-20T19:18:02.592+0000] {subprocess.py:93} INFO - [0m19:18:02  Registered adapter: snowflake=1.11.5
+[2026-06-20T19:18:03.136+0000] {subprocess.py:93} INFO - [0m19:18:03  Encountered an error:
+[2026-06-20T19:18:03.137+0000] {subprocess.py:93} INFO - 'dbt_snowflake://macros/adapters.sql'
+[2026-06-20T19:18:03.138+0000] {subprocess.py:93} INFO - [0m19:18:03  Traceback (most recent call last):
+[2026-06-20T19:18:03.139+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+[2026-06-20T19:18:03.139+0000] {subprocess.py:93} INFO -     result, success = func(*args, **kwargs)
+[2026-06-20T19:18:03.140+0000] {subprocess.py:93} INFO -                       ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.140+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+[2026-06-20T19:18:03.141+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2026-06-20T19:18:03.142+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.142+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 276, in wrapper
+[2026-06-20T19:18:03.143+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2026-06-20T19:18:03.143+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.143+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 321, in wrapper
+[2026-06-20T19:18:03.144+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2026-06-20T19:18:03.144+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.144+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 391, in wrapper
+[2026-06-20T19:18:03.145+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2026-06-20T19:18:03.146+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.146+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 368, in wrapper
+[2026-06-20T19:18:03.146+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2026-06-20T19:18:03.147+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.148+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 407, in wrapper
+[2026-06-20T19:18:03.150+0000] {subprocess.py:93} INFO -     setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+[2026-06-20T19:18:03.151+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/cli/requires.py", line 434, in setup_manifest
+[2026-06-20T19:18:03.151+0000] {subprocess.py:93} INFO -     ctx.obj["manifest"] = parse_manifest(
+[2026-06-20T19:18:03.151+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.151+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/parser/manifest.py", line 2257, in parse_manifest
+[2026-06-20T19:18:03.152+0000] {subprocess.py:93} INFO -     manifest = ManifestLoader.get_full_manifest(
+[2026-06-20T19:18:03.152+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-06-20T19:18:03.152+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/parser/manifest.py", line 323, in get_full_manifest
+[2026-06-20T19:18:03.152+0000] {subprocess.py:93} INFO -     manifest = loader.load()
+[2026-06-20T19:18:03.153+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^
+[2026-06-20T19:18:03.153+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/parser/manifest.py", line 392, in load
+[2026-06-20T19:18:03.153+0000] {subprocess.py:93} INFO -     self.load_and_parse_macros(project_parser_files)
+[2026-06-20T19:18:03.154+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/dbt/parser/manifest.py", line 707, in load_and_parse_macros
+[2026-06-20T19:18:03.156+0000] {subprocess.py:93} INFO -     block = FileBlock(self.manifest.files[file_id])
+[2026-06-20T19:18:03.156+0000] {subprocess.py:93} INFO -                       ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[2026-06-20T19:18:03.157+0000] {subprocess.py:93} INFO - KeyError: 'dbt_snowflake://macros/adapters.sql'
+[2026-06-20T19:18:03.157+0000] {subprocess.py:93} INFO - 
+[2026-06-20T19:18:03.664+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2026-06-20T19:18:03.666+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-20T19:18:03.774+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2026-06-20T19:18:03.777+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=SCD2_snapshots, task_id=dbt_run_marts, run_id=manual__2026-06-20T19:16:45.894980+00:00, execution_date=20260620T191645, start_date=20260620T191800, end_date=20260620T191803
+[2026-06-20T19:18:03.790+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 149 for task dbt_run_marts (Bash command failed. The command returned a non-zero exit code 2.; 7427)
+[2026-06-20T19:18:03.812+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-20T19:18:03.828+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-20T19:18:03.831+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

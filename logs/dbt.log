@@ -1,0 +1,135 @@
+[0m14:23:26.541711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A13C1D460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A14AE96A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A14C9F1A0>]}
+
+
+============================== 14:23:26.571218 | c15b48a5-9586-4214-b1cb-6a2fe386b575 ==============================
+[0m14:23:26.571218 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:23:26.572223 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\matri\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:23:33.760945 [info ] [MainThread]: A project called banking_dbt already exists here.
+[0m14:23:33.762961 [debug] [MainThread]: Command `dbt init` succeeded at 14:23:33.762961 after 7.52 seconds
+[0m14:23:33.762961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A1371C680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A16180CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017A16331370>]}
+[0m14:23:33.763957 [debug] [MainThread]: Flushing usage events
+[0m14:23:34.210312 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:24:04.690949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F7A02BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F7B7D4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F795B2C0>]}
+
+
+============================== 14:24:04.693950 | d4aff9f1-6404-49bb-9a31-47fab070ad09 ==============================
+[0m14:24:04.693950 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:24:04.694951 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\matri\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init banking_dbt', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:24:04.704543 [info ] [MainThread]: A project called banking_dbt already exists here.
+[0m14:24:04.704543 [debug] [MainThread]: Command `dbt init` succeeded at 14:24:04.704543 after 0.13 seconds
+[0m14:24:04.705817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F7BFC4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F7BCF230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F52C03E0>]}
+[0m14:24:04.706200 [debug] [MainThread]: Flushing usage events
+[0m14:24:04.969362 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:25:00.590921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774B84EAB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774E6689E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774DE49280>]}
+
+
+============================== 14:25:00.593927 | 79904fcf-76fe-4a46-9374-14abe6a238da ==============================
+[0m14:25:00.593927 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:25:00.594926 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\matri\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init banking_dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:25:00.604239 [info ] [MainThread]: A project called banking_dbt already exists here.
+[0m14:25:00.605239 [debug] [MainThread]: Command `dbt init` succeeded at 14:25:00.605239 after 0.13 seconds
+[0m14:25:00.605239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774D5CF4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774AA43950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774E0CF230>]}
+[0m14:25:00.606239 [debug] [MainThread]: Flushing usage events
+[0m14:25:00.890914 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:33:50.420501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBFA39EF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBFC113DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBFD230980>]}
+
+
+============================== 14:33:50.424013 | d9925d13-19c7-4a17-a6be-aa0793fd23ec ==============================
+[0m14:33:50.424013 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:33:50.426018 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\matri\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init banking_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:33:50.434042 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\matri\.dbt
+[0m14:33:50.437667 [debug] [MainThread]: Starter project path: C:\Matrika\Projects\banking-modern-datastack\.venv\Lib\site-packages\dbt\include\starter_project
+[0m14:33:50.447056 [info ] [MainThread]: 
+Your new dbt project "banking_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:33:50.447056 [info ] [MainThread]: Setting up your profile.
+[0m14:34:01.809462 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:34:01.810973 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:34:01.810973 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:37:03.798218 [info ] [MainThread]: Profile banking_dbt written to C:\Users\matri\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:37:03.800246 [debug] [MainThread]: Command `dbt init` succeeded at 14:37:03.800246 after 193.53 seconds
+[0m14:37:03.800246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBFFEAE3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB9FAD8620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBFFC26AE0>]}
+[0m14:37:03.801218 [debug] [MainThread]: Flushing usage events
+[0m14:37:04.224505 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:37:20.017530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E753289850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E752F751C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E752F77740>]}
+
+
+============================== 14:37:20.021536 | fd5bef22-c849-426e-b91f-cc3e3a97dd30 ==============================
+[0m14:37:20.021536 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:37:20.021536 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\matri\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:37:20.034939 [info ] [MainThread]: dbt version: 1.11.11
+[0m14:37:20.034939 [info ] [MainThread]: python version: 3.12.13
+[0m14:37:20.035939 [info ] [MainThread]: python path: C:\Matrika\Projects\banking-modern-datastack\.venv\Scripts\python.exe
+[0m14:37:20.035939 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m14:37:20.577251 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:37:20.577251 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:37:20.577251 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:37:20.625514 [info ] [MainThread]: Using profiles dir at C:\Users\matri\.dbt
+[0m14:37:20.625514 [info ] [MainThread]: Using profiles.yml file at C:\Users\matri\.dbt\profiles.yml
+[0m14:37:20.625514 [info ] [MainThread]: Using dbt_project.yml file at C:\Matrika\Projects\banking-modern-datastack\dbt_project.yml
+[0m14:37:20.625514 [info ] [MainThread]: adapter type: snowflake
+[0m14:37:20.625514 [info ] [MainThread]: adapter version: 1.11.5
+[0m14:37:20.630663 [info ] [MainThread]: Configuration:
+[0m14:37:20.630663 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:37:20.631734 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:37:20.631734 [info ] [MainThread]: Required dependencies:
+[0m14:37:20.631734 [debug] [MainThread]: Executing "git --help"
+[0m14:37:20.680573 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:37:20.681577 [debug] [MainThread]: STDERR: "b''"
+[0m14:37:20.681577 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:37:20.681577 [info ] [MainThread]: Connection:
+[0m14:37:20.683082 [info ] [MainThread]:   account: by48111.us-east-2.aws
+[0m14:37:20.683082 [info ] [MainThread]:   user: matrikasubedi
+[0m14:37:20.684099 [info ] [MainThread]:   database: banking
+[0m14:37:20.685090 [info ] [MainThread]:   warehouse: compute_wh
+[0m14:37:20.685090 [info ] [MainThread]:   role: accountadmin
+[0m14:37:20.685090 [info ] [MainThread]:   schema: analytics
+[0m14:37:20.686089 [info ] [MainThread]:   authenticator: None
+[0m14:37:20.686089 [info ] [MainThread]:   oauth_client_id: None
+[0m14:37:20.686089 [info ] [MainThread]:   query_tag: None
+[0m14:37:20.687089 [info ] [MainThread]:   client_session_keep_alive: False
+[0m14:37:20.687089 [info ] [MainThread]:   host: None
+[0m14:37:20.687089 [info ] [MainThread]:   port: None
+[0m14:37:20.687089 [info ] [MainThread]:   proxy_host: None
+[0m14:37:20.688089 [info ] [MainThread]:   proxy_port: None
+[0m14:37:20.688089 [info ] [MainThread]:   protocol: None
+[0m14:37:20.688089 [info ] [MainThread]:   connect_retries: 1
+[0m14:37:20.688089 [info ] [MainThread]:   connect_timeout: None
+[0m14:37:20.688089 [info ] [MainThread]:   retry_on_database_errors: False
+[0m14:37:20.689089 [info ] [MainThread]:   retry_all: False
+[0m14:37:20.689089 [info ] [MainThread]:   insecure_mode: False
+[0m14:37:20.689089 [info ] [MainThread]:   reuse_connections: True
+[0m14:37:20.689089 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m14:37:20.690092 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m14:37:20.690092 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m14:37:20.952871 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m14:37:21.038537 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:37:21.038537 [debug] [MainThread]: On debug: select 1 as id
+[0m14:37:21.038537 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:37:22.694862 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.656 seconds
+[0m14:37:22.697859 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:37:22.699860 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:37:22.700379 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Matrika\Projects\banking-modern-datastack\dbt_project.yml> not found
+
+[0m14:37:22.701385 [debug] [MainThread]: Command `dbt debug` failed at 14:37:22.701385 after 2.97 seconds
+[0m14:37:22.702897 [debug] [MainThread]: Connection 'debug' was left open.
+[0m14:37:22.703913 [debug] [MainThread]: On debug: Close
+[0m14:37:22.891240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E752FAD5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E774108C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E7736E1E20>]}
+[0m14:37:22.892245 [debug] [MainThread]: Flushing usage events
+[0m14:37:23.047377 [debug] [MainThread]: An error was encountered while trying to flush usage events

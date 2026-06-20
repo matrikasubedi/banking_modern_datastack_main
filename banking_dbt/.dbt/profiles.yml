@@ -1,0 +1,13 @@
+banking_dbt:
+  outputs:
+    dev:
+      account: by48111.us-east-2.aws
+      database: banking
+      password: '@GrimstadOslo#01'
+      role: accountadmin
+      schema: analytics
+      threads: 4
+      type: snowflake
+      user: matrikasubedi
+      warehouse: compute_wh
+  target: dev
